@@ -1,0 +1,11 @@
+INPUT,TEXTAREA,SELECT,BUTTON {  
+	color: #000000; 
+	border: 0px #ffcc00 solid; 
+	background-color: #c0c0c0;
+	font-size: 9px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weigt: bolder;
+}
+.form_none {
+	background-color : transparent;
+}

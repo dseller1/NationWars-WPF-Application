@@ -1,0 +1,12 @@
+.events_row {
+	border-top,border-bottom: 2px solid #000000;
+}
+.events_row1 {
+	background-color: #4B4B4B;
+}
+.events_row2 {
+	background-color: #333333;
+}
+.events_kill {
+	background-color: #993300;
+}

@@ -1,0 +1,433 @@
+﻿<Window x:Class="NationWars.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Nation Wars Calculator" MinWidth="400" SizeToContent="WidthAndHeight" Background="WhiteSmoke">
+    <StackPanel>
+        <StackPanel Name="spDisplayName" Background="Gainsboro" VerticalAlignment="Center" Visibility="Collapsed" MinHeight="200">
+            <StackPanel Orientation="Horizontal" Margin="0,50,0,0" HorizontalAlignment="Center">
+                <Label Content="Display Name: " HorizontalContentAlignment="Right" Width="88" />
+                <TextBox Name="tbDisplayName" Width="100" Height="18" Background="GhostWhite" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Label Content="Username: " HorizontalContentAlignment="Right" Width="88"/>
+                <TextBox Name="tbUsername" Width="100" Height="18" Background="GhostWhite" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Label Content="Password: " HorizontalContentAlignment="Right" Width="88"/>
+                <PasswordBox Name="tbPassword" Width="100" Height="18" Background="GhostWhite" />
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Center">
+                <Button Name="btnInitialDisplay" Content="Ok" HorizontalContentAlignment="Center" Height="25" Width="31" Background="GhostWhite" Click="btnInitialDisplay_Click" />
+            </StackPanel>
+        </StackPanel>
+        <TabControl Name="tabItems" Margin="10" BorderBrush="Gainsboro" Background="Gainsboro" FocusVisualStyle="{x:Null}" Visibility="Collapsed" TabStripPlacement="Left">
+            <TabControl.Resources>
+                <Style TargetType="TabItem">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TabItem">
+                                <Border Name="Border" BorderThickness="1,1,1,1" BorderBrush="Gray" CornerRadius="4" Margin="0,0,0,1">
+                                    <ContentPresenter x:Name="ContentSite"
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Center"
+                                        ContentSource="Header"
+                                        Margin="10,2"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter TargetName="Border" Property="Background" Value="LightSkyBlue" />
+                                    </Trigger>
+                                    <Trigger Property="IsSelected" Value="False">
+                                        <Setter TargetName="Border" Property="Background" Value="GhostWhite" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TabControl.Resources>
+            <TabItem Header="Attack Calc">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" Background="Gainsboro">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="Paste PM Info" Width="85" />
+                                <TextBox Name="userArmyInfo" TextChanged="userArmy_TextChanged" Background="GhostWhite" Width="80" VerticalAlignment="Center" AcceptsReturn="True" TextWrapping="Wrap" Height="18">
+                                    <TextBox.ToolTip>
+                                        <StackPanel>
+                                            <TextBlock FontWeight="Bold" HorizontalAlignment="Center">Paste Military Info From PM</TextBlock>
+                                            <TextBlock TextWrapping="Wrap" Width="300" Text="State Summary 		                        Nation Army Summary
+							Spies: 19.213.051 	     Level:8 	  	  Spies 	22.094.143
+							Infantry: 37.712.978 	 Level:8 	  	  Infantry 	250.137.528
+							Tanks: 0 	                    Level:1 	  	  Tanks 	0               
+							Jets: 6.658.184 	          Level:8 	  	  Jets 	6.527.914         
+							Bombers: 0 	               Level:12 	  	Bombers 	4      
+							SAMs: 20.284.490 	     Level:8 	  	  SAMs 	13.390.733      
+							Ships: 999.999.999	     Level:8 	  	  Ships 	27.992.014" />
+                                        </StackPanel>
+                                    </TextBox.ToolTip>
+                                </TextBox>
+
+                                <TextBox Name="blankText" Width="80" IsEnabled="False" Background="GhostWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed" Text="Info Supplied" Height="18"/>
+                                <Button Content="Clear" Name="clearUserBtn"  Margin="5,0,0,0" Click="clearUserBtn_Click" VerticalAlignment="Center" HorizontalAlignment="Center" Width="31" Background="GhostWhite" />
+                            </StackPanel>
+                            <StackPanel Height="26" />
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <Label Content="Your Army" Margin="4,0,0,0" HorizontalAlignment="Left" Width="80" HorizontalContentAlignment="Center"/>
+                                <Label Content="Nation Army" Margin="5,0,0,0" HorizontalAlignment="Left" Width="80" HorizontalContentAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="Spies: " Width="78" HorizontalContentAlignment="Right" />
+                                <Label Name="lblSpyCount" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Name="lblNaSpyCount" Margin="5,0,0,0" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Content="Level: " Margin="5,0,0,0" Width="40"/>
+                                <Label Name="lblSpyLvl" Width="30" HorizontalAlignment="Center" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="Infantry: " Width="78" HorizontalContentAlignment="Right" />
+                                <Label Name="lblInfCount" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Name="lblNaInfCount" Margin="5,0,0,0" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Content="Level: " Margin="5,0,0,0" Width="40"/>
+                                <Label Name="lblInfLvl" Width="30" HorizontalAlignment="Center" />
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="Tanks: " Width="78" HorizontalContentAlignment="Right" />
+                                <Label Name="lblTankCount" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Name="lblNaTankCount" Margin="5,0,0,0" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Content="Level: " Margin="5,0,0,0" Width="40"/>
+                                <Label Name="lblTankLvl" Width="30" HorizontalAlignment="Center" />
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="Jets: " Width="78" HorizontalContentAlignment="Right" />
+                                <Label Name="lblJetCount" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Name="lblNaJetCount" Margin="5,0,0,0" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Content="Level: " Margin="5,0,0,0" Width="40"/>
+                                <Label Name="lblJetLvl" Width="30" HorizontalAlignment="Center" />
+
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="Bombers: " Width="78" HorizontalContentAlignment="Right" />
+                                <Label Name="lblBombCount" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Name="lblNaBombCount" Margin="5,0,0,0" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Content="Level: " Margin="5,0,0,0" Width="40"/>
+                                <Label Name="lblBombLvl" Width="30" HorizontalAlignment="Center" />
+
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="SAMs: " Width="78" HorizontalContentAlignment="Right" />
+                                <Label Name="lblSamCount" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Name="lblNaSamCount" Margin="5,0,0,0" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Content="Level: " Margin="5,0,0,0" Width="40"/>
+                                <Label Name="lblSamLvl" Width="30" HorizontalAlignment="Center" />
+
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="Ships: " Width="78" HorizontalContentAlignment="Right" />
+                                <Label Name="lblShipCount" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Name="lblNaShipCount" Margin="5,0,0,0" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Content="Level: " Margin="5,0,0,0" Width="40"/>
+                                <Label Name="lblShipLvl" Width="30" HorizontalAlignment="Center" />
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Width="3" HorizontalAlignment="Center">
+                            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" Height="235" />
+                        </StackPanel>
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="Paste Espionage Info" Width="120" />
+                                <TextBox Name="defArmyInfo" TextChanged="defArmyInfo_TextChanged" Background="GhostWhite" Width="80" VerticalAlignment="Center" AcceptsReturn="True" TextWrapping="Wrap" Height="18">
+                                    <TextBox.ToolTip>
+                                        <StackPanel>
+                                            <TextBlock FontWeight="Bold" HorizontalAlignment="Center">Paste Espionage Info From Saved Intels</TextBlock>
+                                            <TextBlock TextWrapping="Wrap" Width="300" Text="Military Espionage Report                                  
+							State: Rawr(#156)[Rawr]                                      
+							Readiness 100%                                                  
+							Intelligence Readiness 100%                                                            
+							Army 	                               Nation Army 	   Upgrades
+							Spies: 123.123.120 	          123.123.120 	       Level:7
+							Infantry: 157.883.719 	      280.223.407 	       Level:8
+							Tanks: 123.123.120 	         123.123.123 	       Level:1
+							Jets: 123.123.120 	            123.123.120 	       Level:8
+							Bombers: 123.123.120 	    123.123.120 	       Level:1
+							SAMs: 123.123.120 	         123.123.120 	       Level:1
+							Ships: 123.123.120 	         123.123.120 	       Level:8" />
+                                        </StackPanel>
+                                    </TextBox.ToolTip>
+                                </TextBox>
+                                <TextBox Name="defBlankText" Background="GhostWhite" Width="80" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed" Text="Info Supplied" Height="18"/>
+                                <Button Content="Clear" Name="defClearBtn"  Margin="5,0,0,0" Click="defClearBtn_Click" VerticalAlignment="Center" HorizontalAlignment="Center" Width="31" Background="GhostWhite" />
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <Label Name="lblStateName" Height="26" FontWeight="Bold"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <Label Content="Enemy Army" Margin="4,0,0,0" HorizontalAlignment="Left" Width="80" HorizontalContentAlignment="Center"/>
+                                <Label Content="Nation Army" Margin="5,0,0,0" HorizontalAlignment="Left" Width="80" HorizontalContentAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="Spies: " Width="78" HorizontalContentAlignment="Right" />
+                                <Label Name="lblDefSpyCount" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Name="lblDefNaSpyCount" Margin="5,0,0,0" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Content="Level: " Margin="5,0,0,0" Width="40"/>
+                                <Label Name="lblDefSpyLvl" Width="30" HorizontalAlignment="Center" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="Infantry: " Width="78" HorizontalContentAlignment="Right" />
+                                <Label Name="lblDefInfCount" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Name="lblDefNaInfCount" Margin="5,0,0,0" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Content="Level: " Margin="5,0,0,0" Width="40"/>
+                                <Label Name="lblDefInfLvl" Width="30" HorizontalAlignment="Center" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="Tanks: " Width="78" HorizontalContentAlignment="Right" />
+                                <Label Name="lblDefTankCount" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Name="lblDefNaTankCount" Margin="5,0,0,0" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Content="Level: " Margin="5,0,0,0" Width="40"/>
+                                <Label Name="lblDefTankLvl" Width="30" HorizontalAlignment="Center" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="Jets: " Width="78" HorizontalContentAlignment="Right" />
+                                <Label Name="lblDefJetCount" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Name="lblDefNaJetCount" Margin="5,0,0,0" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Content="Level: " Margin="5,0,0,0" Width="40"/>
+                                <Label Name="lblDefJetLvl" Width="30" HorizontalAlignment="Center" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="Bombers: " Width="78" HorizontalContentAlignment="Right" />
+                                <Label Name="lblDefBombCount" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Name="lblDefNaBombCount" Margin="5,0,0,0" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Content="Level: " Margin="5,0,0,0" Width="40"/>
+                                <Label Name="lblDefBombLvl" Width="30" HorizontalAlignment="Center" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="SAMs: " Width="78" HorizontalContentAlignment="Right" />
+                                <Label Name="lblDefSamCount" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Name="lblDefNaSamCount" Margin="5,0,0,0" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Content="Level: " Margin="5,0,0,0" Width="40"/>
+                                <Label Name="lblDefSamLvl" Width="30" HorizontalAlignment="Center" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="Ships: " Width="78" HorizontalContentAlignment="Right" />
+                                <Label Name="lblDefShipCount" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Name="lblDefNaShipCount" Margin="5,0,0,0" Width="80" HorizontalContentAlignment="Center" />
+                                <Label Content="Level: " Margin="5,0,0,0" Width="40"/>
+                                <Label Name="lblDefShipLvl" Width="30" HorizontalAlignment="Center" />
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel>
+                        <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                    </StackPanel>
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Width="288">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Label Content="Readiness:" HorizontalContentAlignment="Right" />
+                                    <TextBox Name="tbUserReadiness" Background="GhostWhite" HorizontalAlignment="Center" VerticalAlignment="Center" MaxLength="4" Width="41" Height="18" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Label Content="Attack Power:" HorizontalContentAlignment="Right"/>
+                                    <Label Name="lblUserAttPwr" HorizontalContentAlignment="Left"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Label Content="GB Protection:" HorizontalContentAlignment="Center" />
+                                    <Label Name="lblUserGbProtect" HorizontalContentAlignment="Left"/>
+                                </StackPanel>
+                            </StackPanel>
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Height="26">
+                                    <Button Name="btnRecalculate" Background="GhostWhite" Content="Recalculate" Width="64" Height="20" Click="btnRecalculate_Click" />
+                                </StackPanel>
+                            </StackPanel>
+                            <StackPanel Width="288">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Label Content="Readiness:" HorizontalContentAlignment="Right"  />
+                                    <TextBox Name="tbEnemyReadiness" Background="GhostWhite" HorizontalAlignment="Center" VerticalAlignment="Center" MaxLength="4" Width="41" Height="18" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Label Content="Defense Power:" HorizontalContentAlignment="Right"/>
+                                    <Label Name="lblEnemyDefPwr" HorizontalContentAlignment="Left" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Label Content="GB Protection: " HorizontalContentAlignment="Center" />
+                                    <Label Name="lblEnemyGbProtect" HorizontalContentAlignment="Left" />
+                                </StackPanel>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Label Content="Attack Strength %:" HorizontalContentAlignment="Right" />
+                            <Label Name="lblAttStr" HorizontalContentAlignment="Left" FontWeight="Bold" />
+                        </StackPanel>
+                        <StackPanel Name="spRecTroop" Visibility="Collapsed">
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <Label Name="lblAttStatus" Margin="0,5,0,0" FontSize="16" FontWeight="Bold" Height="31" HorizontalContentAlignment="Center" />
+                            </StackPanel>
+                            <StackPanel Name="spTroops" HorizontalAlignment="Center">
+                                <Label Content="Recommended Troops:" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,5,0,0" />
+                                <Label Name="lblRecInf" HorizontalContentAlignment="Center" />
+                                <Label Name="lblRecTanks" HorizontalContentAlignment="Center" />
+                                <Label Name="lblRecJets" HorizontalContentAlignment="Center" />
+                                <Label Name="lblRecShips" HorizontalContentAlignment="Center" />
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Grab Calc">
+                <StackPanel MinHeight="200" HorizontalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" Margin="0,60,0,0" HorizontalAlignment="Center">
+                        <Label Content="State: " Width="88" HorizontalContentAlignment="Right"/>
+                        <TextBox Name="tbState" MaxLength="7" Width="60" Height="18" Background="GhostWhite" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label Content="Grab Amount: " Width="88" HorizontalContentAlignment="Right"/>
+                        <TextBox Name="tbGrabLand" MaxLength="7" Width="60" Height="18" Background="GhostWhite" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Name="btnGrabCalc" Click="btnGrabCalc_Click" Content="Calculate" Width="60" Background="GhostWhite" />
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Land Grab">
+                <StackPanel MinHeight="200">
+                    <StackPanel Orientation="Horizontal" Margin="0,50,0,0" HorizontalAlignment="Center">
+                        <Label Content="Your Land: " HorizontalContentAlignment="Right" Width="95"/>
+                        <TextBox Name="tbUserLand" TextChanged="tbLandGrab_TextChanged" MaxLength="7" Width="60" Height="18" Background="GhostWhite" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label Content="Target Land: " HorizontalContentAlignment="Right" Width="95"/>
+                        <TextBox Name="tbTargetLand" TextChanged="tbLandGrab_TextChanged" MaxLength="7" Width="60" Height="18" Background="GhostWhite" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label Content="Attacks Against: " HorizontalContentAlignment="Right" Width="95"/>
+                        <TextBox Name="tbAttacks" TextChanged="tbLandGrab_TextChanged" MaxLength="7" Width="60" Height="18" Background="GhostWhite" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label Content="Est Grab: " HorizontalContentAlignment="Right" Width="95"/>
+                        <Label Name="lblEstGrab" Width="68"/>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Casher">
+                <StackPanel MinHeight="200" Margin="0,10" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label Content="Total Land: " HorizontalContentAlignment="Right" Width="95"/>
+                        <TextBox Name="tbTotalLand" TextChanged="tbCasher_TextChanged" MaxLength="7" Width="60" Height="18" Background="GhostWhite" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label Content="CS: " HorizontalContentAlignment="Right" Width="95"/>
+                        <TextBox Name="tbCS" TextChanged="tbCasher_TextChanged" MaxLength="7" Width="60" Height="18" Background="GhostWhite" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label Content="BPT: " HorizontalContentAlignment="Right" Width="95"/>
+                        <Label Name="lblBPT" Width="60" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label Content="Current Comm: " HorizontalContentAlignment="Right" Width="95"/>
+                        <TextBox Name="tbCurrentComm" TextChanged="tbCasher_TextChanged" MaxLength="7" Width="60" Height="18" Background="GhostWhite" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label Content="Current Res: " HorizontalContentAlignment="Right" Width="95"/>
+                        <TextBox Name="tbCurrentRes" TextChanged="tbCasher_TextChanged" MaxLength="7" Width="60" Height="18" Background="GhostWhite" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label Content="Target Comm: " HorizontalContentAlignment="Right" Width="95"/>
+                        <Label Name="lblTargetComm" Width="60" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label Content="Target Res: " HorizontalContentAlignment="Right" Width="95"/>
+                        <Label Name="lblTargetRes" Width="60" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label Content="Comm To Build: " HorizontalContentAlignment="Right" Width="95"/>
+                        <Label Name="lblCommToBuild" Width="60" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label Content="Res To Build: " HorizontalContentAlignment="Right" Width="95"/>
+                        <Label Name="lblResToBuild" Width="60" />
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="War Calc">
+                <StackPanel MinHeight="200">
+                    <StackPanel Orientation="Horizontal" Margin="0,20,0,0" HorizontalAlignment="Center">
+                        <Label Content="Population: " HorizontalContentAlignment="Right"/>
+                        <TextBox Name="tbPopulation" TextChanged="tbPopulation_TextChanged" MaxLength="10" Width="80" Height="18" Background="GhostWhite" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Name="btnGaCalc" Click="btnGaCalc_Click" Content="Calculate" Width="60" Background="GhostWhite" />
+                    </StackPanel>
+                    <StackPanel Name="spGaAttacks" Margin="0,5,0,0" Visibility="Hidden">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Label Content="Number of GA Attacks:" HorizontalContentAlignment="Right" />
+                            <Label Name="lblGaAttacks" HorizontalContentAlignment="Left" />
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
+                        <Label Content="Land: " HorizontalContentAlignment="Right"/>
+                        <TextBox Name="tbLand" TextChanged="tbLand_TextChanged" MaxLength="7" Width="60" Height="18" Background="GhostWhite" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Name="btnArCalc" Click="btnArCalc_Click" Content="Calculate" Width="60" Background="GhostWhite" />
+                    </StackPanel>
+                    <StackPanel Name="spArAttacks" Margin="0,5,0,0" Visibility="Hidden">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Label Content="Number of AR Attacks:" HorizontalContentAlignment="Right" />
+                            <Label Name="lblArAttacks" HorizontalContentAlignment="Left"/>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Settings">
+                <StackPanel MinHeight="200">
+                    <StackPanel Orientation="Horizontal" Margin="0,50,0,0" HorizontalAlignment="Center">
+                        <Label Content="Display Name: " HorizontalContentAlignment="Right" Width="88"/>
+                        <TextBox Name="tbSaveDisplay" MaxLength="10" Width="80" Height="18" Background="GhostWhite" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label Content="Username: " HorizontalContentAlignment="Right" Width="88"/>
+                        <TextBox Name="tbSaveUsername" MaxLength="10" Width="80" Height="18" Background="GhostWhite" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label Content="Password: " HorizontalContentAlignment="Right" Width="88"/>
+                        <PasswordBox Name="tbSavePassword" Width="80" Height="18" Background="GhostWhite" />
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Center">
+                        <Button Name="btnSaveSettings" Content="Save" HorizontalContentAlignment="Center" Background="GhostWhite" Click="btnSaveSettings_Click" Width="31" />
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Stats">
+                <StackPanel MinHeight="200">
+                    <StackPanel Orientation="Horizontal" Margin="0,60,0,0" HorizontalAlignment="Center">
+                        <Label Content="Number of Grabs:" HorizontalContentAlignment="Right" />
+                        <Label Name="lblGrabCount" HorizontalContentAlignment="Left" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label Content="Land Taken:" HorizontalContentAlignment="Right" />
+                        <Label Name="lblLandGrabbed" HorizontalContentAlignment="Left" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label Content="Average Grab:" HorizontalContentAlignment="Right" />
+                        <Label Name="lblAverageGrab" HorizontalContentAlignment="Left" />
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Numbers">
+                <StackPanel MinHeight="200">
+                    <StackPanel HorizontalAlignment="Center" Margin="0,75,0,0">
+                        <Button Name="btnCalcNumbers" Content="Calculate" HorizontalContentAlignment="Center" Background="GhostWhite" Click="btnCalcNumbers_Click" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                        <Label Content="Sum:" HorizontalContentAlignment="Right"/>
+                        <Label Name="lblSum" HorizontalContentAlignment="Left" Width="30"/>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </StackPanel>
+</Window>

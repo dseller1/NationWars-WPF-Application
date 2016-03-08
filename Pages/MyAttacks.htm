@@ -1,0 +1,891 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script async="" src="MyAttacks_files/all.js" type="text/javascript"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head><body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0"><br>
+
+
+
+<title>Nation-Wars - Domination Leads To War!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Nation-Wars | Free Game | Military Game | PBBG | Text Based RPG | Browser Based RPG</title>
+<meta name="description" content="Nation-Wars is a Free, Browser Based, Text RPG which is both played as an individual and as a team.">
+<meta name="keywords" content="Browser Based Game, Text Based Game, Free RPG, MMORPG, PBBG Game, MMOBBG Game, MMOMG Game, free text based rpg, MMORTS Game,
+Web Game, Interactive Game,Strategy Game, Game, Play, Online Game.">
+<style fprolloverstyle="">A:hover {color: #FFFF00}
+</style>
+<script src="MyAttacks_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5497279-1']);
+  _gaq.push(['_setDomainName', 'nation-wars.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!--[if IE]>
+<link rel="stylesheet" href="http://static.nation-wars.com/06/stylesheets/ie.css">
+<![endif]-->
+<link rel="shortcut icon" href="http://www.nation-wars.com/favicon.ico">
+<link rel="STYLESHEET" type="text/css" href="MyAttacks_files/forms.css">
+<link rel="STYLESHEET" type="text/css" href="MyAttacks_files/scores.css">
+<link rel="STYLESHEET" type="text/css" href="MyAttacks_files/events.css">
+<link rel="stylesheet" href="MyAttacks_files/main.css">
+
+<link type="text/css" rel="stylesheet" id="arrowchat_css" media="all" href="MyAttacks_files/external.css" charset="utf-8">
+<script type="text/javascript" src="MyAttacks_files/jquery.js"></script>
+<script type="text/javascript" src="MyAttacks_files/jquery-ui.js"></script>
+
+
+
+
+
+
+
+
+<title>Nation-Wars - Domination Leads To War!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="Nation-Wars is a Free, Browser Based, Text RPG which is both played as an individual and as a team.">
+<meta name="keywords" content="Browser Based Game, Text Based Game, Free RPG, MMORPG, PBBG Game, MMOBBG Game, MMOMG Game, free text based rpg, MMORTS Game,
+Web Game, Interactive Game,Strategy Game, Game, Play, Online Game.">
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="MyAttacks_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-5497279-1");
+pageTracker._trackPageview();
+</script>
+
+
+<script language="JavaScript" src="MyAttacks_files/main.js"></script>
+<script src="MyAttacks_files/common.js" type="text/javascript"></script>
+<script src="MyAttacks_files/form.js" type="text/javascript"></script>
+<script language="JavaScript">
+updateFramsetTitle('Nation-Wars - Domination Leads To War!');
+</script>
+
+<center>
+<table height="100%" border="0" cellpadding="0" cellspacing="0" width="925">
+  <tbody><tr>
+    <td height="96" background="">&nbsp;</td>
+
+<td align="center" height="96" background="MyAttacks_files/warbanner.png" valign="top"> 
+<table height="96" border="0" cellpadding="0" cellspacing="0">
+          <tbody><tr>
+
+			<td align="right" height="69" valign="top">
+				<table border="0" cellpadding="0" cellspacing="4" width="170">
+						
+				  
+				</table>
+			</td>
+		  </tr>
+          <tr>
+			<td align="right" height="27" valign="bottom">
+				<table border="0" cellpadding="0" cellspacing="0" width="292">
+			
+				  
+				</table>
+			</td>
+		  </tr>
+		</tbody></table>
+
+	</td>		  
+    <td height="96" background="">&nbsp;</td>
+  </tr>
+  <tr>
+
+  </tr><tr>
+    <td rowspan="2" height="58" background="" width="35">&nbsp;</td>
+      <td height="19" background="MyAttacks_files/classic_logobar.png">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+		  <tbody><tr>
+			<td align="right" valign="middle" width="840"><span class="none"></span></td>
+
+			<td width="15">&nbsp;</td>
+		  </tr>
+		</tbody></table>
+	  </td>
+    <td rowspan="2" height="58" background="" width="35">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="35" background="MyAttacks_files/classicbottombar.png">
+		<table height="100%" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+          <tbody><tr>
+			</tr>
+		</tbody></table>
+	</td>
+  </tr>
+  <tr>
+    <td background="" width="35">&nbsp;</td>
+    <td bgcolor="#202020" valign="top">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center" height="100%" valign="top" width="178">
+<div id="menuHolder">
+<div id="menu1"><div id="menu2"></div>
+<span>General</span>
+<a href="http://game.nation-wars.com/help.php" title="Click here to ask for help or notify admins of a game bug."><b>Support / Help</b></a>
+<a href="http://game.nation-wars.com/bonuses.php" title="Click here to claim your bonuses. You will have to visit certain pages before you can claim them"><b>Bonuses</b></a>
+<a href="http://game.nation-wars.com/gamesettings.php" title="Explains all values of the upgrades and other game information">Game Info</a>
+<a href="http://game.nation-wars.com/recruiting.php" title="This is a listing of all the Nations and Members who are recruiting or looking for a Nation. You can add your name to this list by clicking on the Game Preferences tab">Recruitment</a>
+<a href="http://game.nation-wars.com/main.php" title="This is the main page of the game. You see this page when you first log in">Home News</a>
+<a href="http://game.nation-wars.com/oldnews.php" title="View all your past news">Archives</a>
+<a href="http://game.nation-wars.com/search.php" title="You can search for members in this section by entering the state number of who you are looking for">Search</a>
+<a href="http://game.nation-wars.com/setup.php" title="Here is where you will set your tax and production settings for your state">Tax &amp; Production</a>
+<span>Overview</span>
+<a href="http://game.nation-wars.com/military_stats.php" title="">Your Overview</a> 
+<a href="http://game.nation-wars.com/scores-all.php" title="">All State Scores</a>
+<a href="http://game.nation-wars.com/globalstats.php" title="">Global Overview</a>	
+<span>Structuring</span>
+<a href="http://game.nation-wars.com/build.php" title="">Build</a>
+<a href="http://game.nation-wars.com/destroy.php" title="">Destroy</a>
+<a href="http://game.nation-wars.com/expand.php" title="">Expand</a>
+<span>Economics</span>
+<a href="http://game.nation-wars.com/bank.php" title="">Bank</a>
+<a href="http://game.nation-wars.com/cash.php" title="">Cash Turns</a>
+<a href="http://game.nation-wars.com/blackmarket.php" title="">Black Market</a>
+<a href="http://game.nation-wars.com/publicmarketbuy.php" title="">Public Market</a>
+<a href="http://game.nation-wars.com/hichart.php" title="">Market Analysis</a>
+<a href="http://game.nation-wars.com/research.php" title="">Research Turns</a>
+<span>Military</span>
+<a href="http://game.nation-wars.com/attack.php" title="">Attack</a>
+<a href="http://game.nation-wars.com/gdn.php" title="">GDN</a>
+<a href="http://game.nation-wars.com/events.php" title="">Global Events</a>
+<a href="http://game.nation-wars.com/intelligence.php" title="">Spy</a>
+<a href="http://game.nation-wars.com/saved_intel.php" title="">Saved Intels</a>
+<a href="http://game.nation-wars.com/refuel.php" title="">Refuel</a>
+<a href="http://game.nation-wars.com/tdn.php" title="">TDN</a>
+<a href="http://game.nation-wars.com/upgrade.php" title="">Upgrades</a>
+<span>Nation</span>
+<a href="http://game.nation-wars.com/nation_scores.php" title="">Nation Scores</a>
+<a href="http://game.nation-wars.com/nation_globalnews.php" title="">Global News</a>
+<a href="http://game.nation-wars.com/nation_localnews.php" title="">Local News</a>
+<a href="http://game.nation-wars.com/nation_ministery.php" title="">Members</a>
+<a href="javascript:;" onclick="OpenNationCboxWindow('nationirc.php')">Nation Cbox</a>
+<a href="http://game.nation-wars.com/nationsforums.php" title="">Nation Forums</a>
+<span>Account</span>
+<a href="http://game.nation-wars.com/account.php" title="">Preferences</a>
+<a target="_blank" href="http://forums.nation-wars.com/forum.php">Forums</a>
+<a href="http://forums.nation-wars.com/?do=logout&amp;u=57747" onclick="return confirmLink(this,'Log Out')" target="_top">Log Out</a>
+</div>      
+    </div></td>
+       <td height="100%" valign="top" width="677"> 
+				<table height="100%" border="0" cellpadding="0" cellspacing="0" width="100%">
+				  <tbody><tr>
+				    <td height="46" background="MyAttacks_files/middlemiddle.png">
+
+						<table height="46" border="0" cellpadding="0" cellspacing="0" width="652">
+						  <tbody><tr>
+						    <td height="46" valign="bottom" width="652">
+								<table height="46" border="0" cellpadding="0" cellspacing="0" width="652">
+								  <tbody><tr>
+									<td height="32" width="10">&nbsp;</td>
+									<td height="32" valign="bottom" width="329"><h2>Greetings Hacker</h2></td>                                  
+								  </tr>
+								  <tr>
+									<td colspan="3" height="14">&nbsp;</td>
+								  </tr>
+								</tbody></table>
+							</td>
+						  </tr>
+						</tbody></table>
+					</td>
+
+				  </tr>
+				  <tr>
+					<td style="background-repeat: no-repeat;" background="MyAttacks_files/middle2.png" valign="top">
+						<table border="0" cellpadding="0" cellspacing="0" width="660">
+						  <tbody><tr> 
+							<td>
+								<br>
+
+<a name="top"></a>
+
+<table width="100%">
+<tbody><tr>
+<td colspan="2" align="center">
+</td>
+</tr>
+<tr>
+<td>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="100%">
+<table class="statbar" bordercolordark="" bordercolorlight="#000000" align="center" bgcolor="#" border="1" cellpadding="2" cellspacing="0">
+<tbody><tr>
+<td class="statbar" nowrap="nowrap"><u>Turns</u>: 2</td>
+<td class="statbar" nowrap="nowrap"><u>Networth</u>: $12.209.859</td>
+<td class="statbar" nowrap="nowrap"><u>Money</u>: $521.853.527</td>
+<td class="statbar" nowrap="nowrap"><u>Land</u>: 18.387</td>
+<td class="statbar" nowrap="nowrap"><u>Readiness</u>: 100%</td>
+</tr>
+</tbody></table>
+<table class="statbar" bordercolordark="" bordercolorlight="#000000" align="center" border="1" cellpadding="2" cellspacing="0">
+<tbody><tr>
+<td class="statbar" nowrap="nowrap"><u>Gametime</u>: 01:37:08-03/07</td>
+<td class="statbar" nowrap="nowrap"><u>Next Turn</u>: 3 minutes</td>
+<td class="statbar" nowrap="nowrap"><u>Round Ends</u>: 20d 22h 22m</td>
+</tr>
+
+
+</tbody></table><table class="statbar" bordercolordark="" bordercolorlight="#000000" align="center" bgcolor="#" border="1" cellpadding="2" cellspacing="0">
+<tbody><tr>
+<td class="statbar" nowrap="nowrap"><u>Food</u>: 1.992.389</td>
+<td class="statbar" nowrap="nowrap"><u>Oil</u>: 2.348.480</td>
+<td class="statbar" nowrap="nowrap"><u>Science</u>: 3.219</td>
+<td class="statbar" nowrap="nowrap"><u>Messages</u>: <a href="http://game.nation-wars.com/messages.php"><img style="border:none" alt="In game Messages" title="Received Messages" src="MyAttacks_files/pm_inbox2.png"></a>
+ 
+0  <a href="http://game.nation-wars.com/messagesent.php?"><img style="border:none" alt="Sent Messages" title="Sent Messages" src="MyAttacks_files/pm_senbox.png"></a> </td>
+</tr>
+</tbody></table>
+<br>
+<table style="border-collapse: collapse" align="center" border="0" bordercolor="#111111" cellpadding="3" cellspacing="0" width="65%">
+<tbody><tr class="header">
+<td style="" class="scores_col_2" align="center" valign="middle" width="15%"><u>Standard Attack</u><br><b>SA</b></td>
+<td style="" class="scores_col_2" align="center" valign="middle" width="15%"><u>Ground Attack</u><br><b>GA</b></td>
+<td style="" class="scores_col_2" align="center" valign="middle" width="13%"><u>Air Raid</u><br><b>AR</b></td>
+<td style="" class="scores_col_2" align="center" valign="middle" width="14%"><u>Amphibious Assault</u><br><b>AA</b></td>
+</tr>
+</tbody></table>
+<br>
+<br>
+<table style="border-collapse: collapse" align="center" border="0" bordercolor="#111111" cellpadding="3" cellspacing="0" width="95%">
+<tbody><tr class="header">
+<td style="" class="scores_col_1" align="center" valign="center" width="2%"><b><u>Type</u></b></td>
+<td style="" class="scores_col_1" align="center" valign="center" width="19%"><b><u>Attacker</u></b></td>
+<td style="" class="scores_col_1" align="center" valign="center" width="19%"><b><u>Defender</u></b></td>	    
+<td style="" class="scores_col_1" align="center" valign="center" width="40%"><b><u>Losses</u></b></td>
+<td style="" class="scores_col_1" align="center" valign="center" width="15%"><b><u>Time</u></b></td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Half a thought(#59)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=9" class="nation_tag"><span class="nation_tag">WLF</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">1.589 Land / 1.587 Buildings, 310 Science, $43.868.755, 192.953 Food, 70.688 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">01:11:48-03/07</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">Flying Wombat(#38)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=9" class="nation_tag"><span class="nation_tag">WLF</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Defeat / $110.286.143</td>
+<td style="" class="scores_col_2" align="center" valign="center">21:21:43-03/06</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">-Z-(#32)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=9" class="nation_tag"><span class="nation_tag">WLF</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">2.751 Land / 2.748 Buildings, 1 Science, $10.031.624, 3.542 Food, 2.546 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">16:34:36-03/06</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Flying Wombat(#38)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=9" class="nation_tag"><span class="nation_tag">WLF</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">1.643 Land / 1.642 Buildings, 35 Science, $59.326.682, 6.129 Food, 9.445 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">02:37:30-03/06</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">-Z-(#32)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=9" class="nation_tag"><span class="nation_tag">WLF</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Defeat / $20.795.316</td>
+<td style="" class="scores_col_2" align="center" valign="center">21:03:31-03/05</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">-Z-(#32)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=9" class="nation_tag"><span class="nation_tag">WLF</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Defeat / $27.895.691</td>
+<td style="" class="scores_col_2" align="center" valign="center">20:59:46-03/05</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">WMD for hire(#57)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=9" class="nation_tag"><span class="nation_tag">WLF</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">1.190 Land / 1.172 Buildings, 73 Science, $2.940.338, 7.557 Food, 17.118 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">16:51:13-03/05</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">WMD for hire(#57)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=9" class="nation_tag"><span class="nation_tag">WLF</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">756 Land / 752 Buildings, 6.304 Food, 8.731 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">14:47:33-03/05</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Half a thought(#59)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=9" class="nation_tag"><span class="nation_tag">WLF</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">1.470 Land / 1.464 Buildings, 606 Science, $36.690.791, 40.089 Food, 38.867 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">03:35:06-03/05</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Chicago(#138)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=35" class="nation_tag"><span class="nation_tag">RIOT</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">762 Land / 760 Buildings, 8 Science, 3.819 Food, 1.671 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">21:05:45-03/04</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">-Z-(#32)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=9" class="nation_tag"><span class="nation_tag">WLF</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">1.000 Land / 999 Buildings, 24 Science, $5.067.462, 25.826 Food, 13.465 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">16:42:09-03/04</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Chicago(#138)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=35" class="nation_tag"><span class="nation_tag">RIOT</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">1.026 Land / 1.023 Buildings, 8 Science, $459.981, 7.145 Food, 3.518 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">14:31:34-03/04</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">Flying Wombat(#38)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=9" class="nation_tag"><span class="nation_tag">WLF</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">276 Land / 276 Buildings, 18.628 Food, 7.612 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">09:05:06-03/04</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">liveslowdiewhenever(#4)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=28" class="nation_tag"><span class="nation_tag">eleet</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">304 Land / 304 Buildings, 22.308 Food, 8.914 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">04:32:05-03/04</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Half a thought(#59)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=9" class="nation_tag"><span class="nation_tag">WLF</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">1.302 Land / 1.299 Buildings, $204.823, 4.735 Food, 2.765 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">14:51:13-03/03</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">Half a thought(#59)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=9" class="nation_tag"><span class="nation_tag">WLF</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">99 Land / 83 Buildings, $2.065.611, 18.357 Food, 4.746 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">05:02:56-03/03</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">-Z-(#32)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=9" class="nation_tag"><span class="nation_tag">WLF</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">509 Land / 508 Buildings, 15.925 Food, 7.477 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">04:41:47-03/03</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">-Z-(#32)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=9" class="nation_tag"><span class="nation_tag">WLF</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">1.301 Land / 1.297 Buildings, 16.086 Food, 7.477 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">03:51:44-03/03</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">-Z-(#32)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=9" class="nation_tag"><span class="nation_tag">WLF</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Defeat / </td>
+<td style="" class="scores_col_2" align="center" valign="center">03:24:51-03/03</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Chicago(#138)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=35" class="nation_tag"><span class="nation_tag">RIOT</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">627 Land / 624 Buildings, 8 Science, 4.774 Food, 105 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">02:31:14-03/03</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">Chicago(#138)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=35" class="nation_tag"><span class="nation_tag">RIOT</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">102 Land / 101 Buildings, 20.225 Food, 5.322 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">01:25:42-03/03</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">FuryRoad(#131)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=35" class="nation_tag"><span class="nation_tag">RIOT</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">1.281 Land / 1.197 Buildings, 2.891 Food, 1.724 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">22:36:36-03/02</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">BLEEDING OUT MY EYES(#6)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=28" class="nation_tag"><span class="nation_tag">eleet</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">248 Land / 245 Buildings, 248 Food, 56 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">14:59:54-03/02</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">BLEEDING OUT MY EYES(#6)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=28" class="nation_tag"><span class="nation_tag">eleet</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">706 Land / 697 Buildings, 250 Food, 56 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">14:59:50-03/02</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">I Love(#118)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=28" class="nation_tag"><span class="nation_tag">eleet</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">876 Land / 865 Buildings, 253 Food, 56 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">14:37:10-03/02</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">liveslowdiewhenever(#4)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=28" class="nation_tag"><span class="nation_tag">eleet</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">1.088 Land / 1.075 Buildings, 256 Food, 56 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">10:12:21-03/02</td>
+</tr>
+<tr>
+<td style="" class="scores_col_2" align="center" valign="center">SA</td>
+<td style="" class="scores_col_2" align="center" valign="center">liveslowdiewhenever(#4)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=28" class="nation_tag"><span class="nation_tag">eleet</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">Hardison(#33)<br>[<a href="http://game.nation-wars.com/nation_ministery.php?action=show_nation_list&amp;nationid=11" class="nation_tag"><span class="nation_tag">GFI</span></a>]</td>
+<td style="" class="scores_col_2" align="center" valign="center">1.352 Land / 1.335 Buildings, 258 Food, 56 Oil</td>
+<td style="" class="scores_col_2" align="center" valign="center">10:12:21-03/02</td>
+</tr>
+<tr>
+<td colspan="6"><i>Showing 27 attacks</i></td>
+</tr>
+</tbody></table>
+
+<form method="get" onsubmit="return submitClick(this);" action="events.php">
+<input name="action" value="search" type="Hidden">
+<table>
+<tbody><tr>
+<th colspan="3">Search the global events database</th>
+</tr>
+<tr>
+<td><b>From:</b></td>
+<td>
+<select name="search[timefrom]">
+<option value="672" selected="selected">672 Hours</option>
+<option value="666">666 Hours</option>
+<option value="660">660 Hours</option>
+<option value="654">654 Hours</option>
+<option value="648">648 Hours</option>
+<option value="642">642 Hours</option>
+<option value="636">636 Hours</option>
+<option value="630">630 Hours</option>
+<option value="624">624 Hours</option>
+<option value="618">618 Hours</option>
+<option value="612">612 Hours</option>
+<option value="606">606 Hours</option>
+<option value="600">600 Hours</option>
+<option value="594">594 Hours</option>
+<option value="588">588 Hours</option>
+<option value="582">582 Hours</option>
+<option value="576">576 Hours</option>
+<option value="570">570 Hours</option>
+<option value="564">564 Hours</option>
+<option value="558">558 Hours</option>
+<option value="552">552 Hours</option>
+<option value="546">546 Hours</option>
+<option value="540">540 Hours</option>
+<option value="534">534 Hours</option>
+<option value="528">528 Hours</option>
+<option value="522">522 Hours</option>
+<option value="516">516 Hours</option>
+<option value="510">510 Hours</option>
+<option value="504">504 Hours</option>
+<option value="498">498 Hours</option>
+<option value="492">492 Hours</option>
+<option value="486">486 Hours</option>
+<option value="480">480 Hours</option>
+<option value="474">474 Hours</option>
+<option value="468">468 Hours</option>
+<option value="462">462 Hours</option>
+<option value="456">456 Hours</option>
+<option value="450">450 Hours</option>
+<option value="444">444 Hours</option>
+<option value="438">438 Hours</option>
+<option value="432">432 Hours</option>
+<option value="426">426 Hours</option>
+<option value="420">420 Hours</option>
+<option value="414">414 Hours</option>
+<option value="408">408 Hours</option>
+<option value="402">402 Hours</option>
+<option value="396">396 Hours</option>
+<option value="390">390 Hours</option>
+<option value="384">384 Hours</option>
+<option value="378">378 Hours</option>
+<option value="372">372 Hours</option>
+<option value="366">366 Hours</option>
+<option value="360">360 Hours</option>
+<option value="354">354 Hours</option>
+<option value="348">348 Hours</option>
+<option value="342">342 Hours</option>
+<option value="336">336 Hours</option>
+<option value="330">330 Hours</option>
+<option value="324">324 Hours</option>
+<option value="318">318 Hours</option>
+<option value="312">312 Hours</option>
+<option value="306">306 Hours</option>
+<option value="300">300 Hours</option>
+<option value="294">294 Hours</option>
+<option value="288">288 Hours</option>
+<option value="282">282 Hours</option>
+<option value="276">276 Hours</option>
+<option value="270">270 Hours</option>
+<option value="264">264 Hours</option>
+<option value="258">258 Hours</option>
+<option value="252">252 Hours</option>
+<option value="246">246 Hours</option>
+<option value="240">240 Hours</option>
+<option value="234">234 Hours</option>
+<option value="228">228 Hours</option>
+<option value="222">222 Hours</option>
+<option value="216">216 Hours</option>
+<option value="210">210 Hours</option>
+<option value="204">204 Hours</option>
+<option value="198">198 Hours</option>
+<option value="192">192 Hours</option>
+<option value="186">186 Hours</option>
+<option value="180">180 Hours</option>
+<option value="174">174 Hours</option>
+<option value="168">168 Hours</option>
+<option value="162">162 Hours</option>
+<option value="156">156 Hours</option>
+<option value="150">150 Hours</option>
+<option value="144">144 Hours</option>
+<option value="138">138 Hours</option>
+<option value="132">132 Hours</option>
+<option value="126">126 Hours</option>
+<option value="120">120 Hours</option>
+<option value="114">114 Hours</option>
+<option value="108">108 Hours</option>
+<option value="102">102 Hours</option>
+<option value="96">96 Hours</option>
+<option value="90">90 Hours</option>
+<option value="84">84 Hours</option>
+<option value="78">78 Hours</option>
+<option value="72">72 Hours</option>
+<option value="66">66 Hours</option>
+<option value="60">60 Hours</option>
+<option value="54">54 Hours</option>
+<option value="48">48 Hours</option>
+<option value="42">42 Hours</option>
+<option value="36">36 Hours</option>
+<option value="30">30 Hours</option>
+<option value="24">24 Hours</option>
+<option value="18">18 Hours</option>
+<option value="12">12 Hours</option>
+<option value="6">6 Hours</option>
+</select>
+</td>
+<td></td>
+</tr>
+<tr>
+<td><b>To:</b></td>
+<td>
+<select name="search[timeto]">
+<option value="666">
+666 Hours</option>
+<option value="660">
+660 Hours</option>
+<option value="654">
+654 Hours</option>
+<option value="648">
+648 Hours</option>
+<option value="642">
+642 Hours</option>
+<option value="636">
+636 Hours</option>
+<option value="630">
+630 Hours</option>
+<option value="624">
+624 Hours</option>
+<option value="618">
+618 Hours</option>
+<option value="612">
+612 Hours</option>
+<option value="606">
+606 Hours</option>
+<option value="600">
+600 Hours</option>
+<option value="594">
+594 Hours</option>
+<option value="588">
+588 Hours</option>
+<option value="582">
+582 Hours</option>
+<option value="576">
+576 Hours</option>
+<option value="570">
+570 Hours</option>
+<option value="564">
+564 Hours</option>
+<option value="558">
+558 Hours</option>
+<option value="552">
+552 Hours</option>
+<option value="546">
+546 Hours</option>
+<option value="540">
+540 Hours</option>
+<option value="534">
+534 Hours</option>
+<option value="528">
+528 Hours</option>
+<option value="522">
+522 Hours</option>
+<option value="516">
+516 Hours</option>
+<option value="510">
+510 Hours</option>
+<option value="504">
+504 Hours</option>
+<option value="498">
+498 Hours</option>
+<option value="492">
+492 Hours</option>
+<option value="486">
+486 Hours</option>
+<option value="480">
+480 Hours</option>
+<option value="474">
+474 Hours</option>
+<option value="468">
+468 Hours</option>
+<option value="462">
+462 Hours</option>
+<option value="456">
+456 Hours</option>
+<option value="450">
+450 Hours</option>
+<option value="444">
+444 Hours</option>
+<option value="438">
+438 Hours</option>
+<option value="432">
+432 Hours</option>
+<option value="426">
+426 Hours</option>
+<option value="420">
+420 Hours</option>
+<option value="414">
+414 Hours</option>
+<option value="408">
+408 Hours</option>
+<option value="402">
+402 Hours</option>
+<option value="396">
+396 Hours</option>
+<option value="390">
+390 Hours</option>
+<option value="384">
+384 Hours</option>
+<option value="378">
+378 Hours</option>
+<option value="372">
+372 Hours</option>
+<option value="366">
+366 Hours</option>
+<option value="360">
+360 Hours</option>
+<option value="354">
+354 Hours</option>
+<option value="348">
+348 Hours</option>
+<option value="342">
+342 Hours</option>
+<option value="336">
+336 Hours</option>
+<option value="330">
+330 Hours</option>
+<option value="324">
+324 Hours</option>
+<option value="318">
+318 Hours</option>
+<option value="312">
+312 Hours</option>
+<option value="306">
+306 Hours</option>
+<option value="300">
+300 Hours</option>
+<option value="294">
+294 Hours</option>
+<option value="288">
+288 Hours</option>
+<option value="282">
+282 Hours</option>
+<option value="276">
+276 Hours</option>
+<option value="270">
+270 Hours</option>
+<option value="264">
+264 Hours</option>
+<option value="258">
+258 Hours</option>
+<option value="252">
+252 Hours</option>
+<option value="246">
+246 Hours</option>
+<option value="240">
+240 Hours</option>
+<option value="234">
+234 Hours</option>
+<option value="228">
+228 Hours</option>
+<option value="222">
+222 Hours</option>
+<option value="216">
+216 Hours</option>
+<option value="210">
+210 Hours</option>
+<option value="204">
+204 Hours</option>
+<option value="198">
+198 Hours</option>
+<option value="192">
+192 Hours</option>
+<option value="186">
+186 Hours</option>
+<option value="180">
+180 Hours</option>
+<option value="174">
+174 Hours</option>
+<option value="168">
+168 Hours</option>
+<option value="162">
+162 Hours</option>
+<option value="156">
+156 Hours</option>
+<option value="150">
+150 Hours</option>
+<option value="144">
+144 Hours</option>
+<option value="138">
+138 Hours</option>
+<option value="132">
+132 Hours</option>
+<option value="126">
+126 Hours</option>
+<option value="120">
+120 Hours</option>
+<option value="114">
+114 Hours</option>
+<option value="108">
+108 Hours</option>
+<option value="102">
+102 Hours</option>
+<option value="96">
+96 Hours</option>
+<option value="90">
+90 Hours</option>
+<option value="84">
+84 Hours</option>
+<option value="78">
+78 Hours</option>
+<option value="72">
+72 Hours</option>
+<option value="66">
+66 Hours</option>
+<option value="60">
+60 Hours</option>
+<option value="54">
+54 Hours</option>
+<option value="48">
+48 Hours</option>
+<option value="42">
+42 Hours</option>
+<option value="36">
+36 Hours</option>
+<option value="30">
+30 Hours</option>
+<option value="24">
+24 Hours</option>
+<option value="18">
+18 Hours</option>
+<option value="12">
+12 Hours</option>
+<option value="6">
+6 Hours</option>
+<option value="0" selected="selected">
+Now</option>
+</select>
+</td>
+<td></td>
+</tr>
+<tr>
+<td><b>State id(s):</b></td>
+<td>
+<input name="search[stateids]" value="33" size="10" type="Text">
+</td>
+<td>Separate several ids with a comma( , )</td>
+</tr>
+<tr>
+<td><b>Nations TAG(s):</b></td>
+<td>
+<input name="search[tags]" size="10" type="Text">
+</td>
+<td>Separate several tags with a comma( , )</td>
+</tr>
+<tr>
+<td><b>Attacks:</b></td>
+<td>
+<select name="search[attacktype]">
+<option value="0" selected="selected">All Attacks</option>
+<option value="1">Standard Attack</option>
+<option value="2">Ground Attack</option>
+<option value="3">Air Raid</option>
+<option value="4">Amphibious Assault</option>
+</select>
+</td>
+<td>Show only attacks of this kind</td>
+</tr>
+<tr>
+<td><b>Display Limit:</b></td>
+<td>
+<select name="search[displaylimit]">
+<option selected="selected">50</option>
+<option value="100">100</option>
+<option value="200">200</option>
+<option value="400">400</option>
+<option value="800">800</option>
+</select>
+</td>
+<td></td>
+</tr>
+<tr>
+<td><input name="Submit" value="Search" type="Submit"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</form>
+
+</td>
+<td align="center" valign="top">
+</td>
+</tr>
+</tbody></table>
+<table align="center">
+<tbody><tr>
+<td id="copyrightTd">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<center>Copyright © 2007-2016 Nation-Wars. All Rights Reserved.<br></center>
+<center>This site is optimized for use on Mozilla Firefox @ 1024x768 or higher.</center><br>
+<script type="text/javascript" src="MyAttacks_files/external.php" charset="utf-8"></script>
+<script type="text/javascript" src="MyAttacks_files/external_002.php" charset="utf-8"></script>
+
+
+</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></center><div class=" fb_reset" id="fb-root"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe src="MyAttacks_files/xd_arbiter.htm" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_http" scrolling="no" allowfullscreen="true" allowtransparency="true" name="fb_xdm_frame_http" frameborder="0"></iframe><iframe src="MyAttacks_files/xd_arbiter_002.htm" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_https" scrolling="no" allowfullscreen="true" allowtransparency="true" name="fb_xdm_frame_https" frameborder="0"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div><div style="display: none;" id="lbOverlay"></div><div style="display: none;" id="lbCenter"><div id="lbImage"><div style="position: relative;"><a id="lbPrevLink" href="#"></a><a id="lbNextLink" href="#"></a></div></div></div><div style="display: none;" id="lbBottomContainer"><div id="lbBottom"><a id="lbCloseLink" href="#"></a><div id="lbCaption"></div><div id="lbNumber"></div><div style="clear: both;"></div></div></div><div style="left: 9px; width: 1331px; display: none;" id="arrowchat_base"><div style="" id="arrowchat_hide_bar_button" class="arrowchat_bar_right arrowchat_bar_button"><div class="arrowchat_inner_button"> <i class="arrowchat_icons arrowchat_hide_icon"></i> </div></div><div class="arrowchat_bar_right arrowchat_bar_button" id="arrowchat_popoutchatbutton"><div class="arrowchat_inner_button"><i class="arrowchat_icons arrowchat_popin_icon"></i></div></div><div style="width: 16px;" id="arrowchat_chatrooms_button" class="arrowchat_bar_right arrowchat_bar_button"><div class="arrowchat_inner_button"> <div id="arrowchat_chatrooms_icon"></div> <div id="arrowchat_chatrooms_text" style="float: left; display: none;">Chat Rooms</div> </div></div><div style="width: 189px;" class="arrowchat_bar_button arrowchat_bar_right" id="arrowchat_buddy_list_tab"><div class="arrowchat_inner_button"> <div class="arrowchat_user_offline2" id="arrowchat_userstab_icon"></div> <div id="arrowchat_userstab_text" style="float:left"><b>Chat</b> (<b>0</b>)</div> </div></div><div></div><div class="arrowchat_chatbox_right_last arrowchat_chatbox_lr" id="arrowchat_chatbox_right"><span class="arrowchat_next_tab arrowchat_next_tab_last"></span><div class="arrowchat_tabtext">0</div><span class="arrowchat_tabalertlr" style="top: -5px; display: none;">0</span></div><div style="width: 148px;" id="arrowchat_chatboxes"><div style="width: 148px;" id="arrowchat_chatboxes_wide"><div data-id="121" class="arrowchat_bar_right arrowchat_bar_button arrowchat_user_tab arrowchat_tab_offline"><div class="arrowchat_inner_button"><div class="arrowchat_closebox_bottom_status arrowchat_offline"></div> <div style="float:left" class="arrowchat_username_message">DBozMen</div> </div><div class="arrowchat_closebox_bottom"></div></div></div></div><div class="arrowchat_chatbox_left_last arrowchat_chatbox_lr" id="arrowchat_chatbox_left"><span class="arrowchat_previous_tab arrowchat_previous_tab_last"></span><div class="arrowchat_tabtext">0</div><span class="arrowchat_tabalertlr" style="top: -5px; display: none;">0</span></div></div><div style="display: block;" id="arrowchat_show_bar_button" class="arrowchat_bar_right arrowchat_bar_button"><div class="arrowchat_inner_button"> <i class="arrowchat_icons arrowchat_show_icon"></i> </div></div><div style="display: none; left: -471px; bottom: 25px;" id="arrowchat_chatrooms_popup" class="arrowchat_tabpopup"><div class="arrowchat_chatrooms_title"> <div class="arrowchat_tab_name">Chat Rooms</div> <div class="arrowchat_more_button" id="arrowchat_chatroom_options"> <a href="javascript:void(0);" class="arrowchat_more_anchor arrowchat_chatroom_item2"></a> <div class="arrowchat_more_wrapper"> <div id="arrowchat_chatroom_options_flyout"> <ul class="arrowchat_inner_menu"> <li class="arrowchat_menu_item"> <a id="arrowchat_chatroom_window" class="arrowchat_menu_anchor arrowchat_menu_unchecked"> <span>Keep Room Open</span> <input type="checkbox"> </a> </li> <!-- <li class="arrowchat_menu_item"> <a id="arrowchat_chatroom_stay" class="arrowchat_menu_anchor"> <span>Stay in Room</span> <input type="checkbox" checked="" /> </a> </li> --> <li class="arrowchat_menu_item"> <a id="arrowchat_chatroom_sound" class="arrowchat_menu_anchor"> <span>Chat Room Sounds</span> <input checked="checked" type="checkbox"> </a> </li> <li class="arrowchat_menu_item"> <a id="arrowchat_chatroom_show_names" class="arrowchat_menu_anchor arrowchat_menu_unchecked"> <span>Always Show Names</span> <input type="checkbox"> </a> </li> <li class="arrowchat_menu_separator"></li> <li class="arrowchat_menu_item"> <a id="arrowchat_chatroom_block" class="arrowchat_menu_anchor arrowchat_menu_unchecked"> <span>Block Private Chats</span> <input type="checkbox"> </a> </li> </ul> <div class="arrowchat_flood_menu"> <div class="arrowchat_flood_menu_text">Select your chat flood settings</div> <div style="float:left"> <select id="arrowchat_flood_select_messages"> <option selected="selected" value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> <option value="10">10</option> <option value="15">15</option> <option value="20">20</option> </select> </div> <div class="arrowchat_flood_menu_text2" style="float:left"> message(s) every </div> <div class="arrowchat_clearfix"></div> <div style="float:left"> <select id="arrowchat_flood_select_seconds"> <option selected="selected" value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> <option value="10">10</option> <option value="15">15</option> <option value="20">20</option> <option value="25">25</option> <option value="30">30</option> <option value="40">40</option> <option value="50">50</option> <option value="60">60</option> <option value="90">90</option> <option value="120">120</option> </select> </div> <div class="arrowchat_flood_menu_text2" style="float:left"> second(s) </div> <div class="arrowchat_clearfix"></div> <div class="arrowchat_ui_button" id="arrowchat_flood_button" style="float:right"> <div style="width:30px;height:18px;position:relative;top:2px;left:-1px;">Save</div> </div> <div class="arrowchat_clearfix"></div> </div> <i class="arrowchat_more_tip"></i> </div> </div> </div> <div class="arrowchat_chatroom_create" id="arrowchat_chatroom_create"> <a href="javascript:void(0);" class="arrowchat_more_anchor arrowchat_chatroom_item"></a> </div> <div class="arrowchat_chatroom_leave" id="arrowchat_chatroom_leave"> <a href="javascript:void(0);" class="arrowchat_more_anchor arrowchat_chatroom_item3"></a> </div> <div class="arrowchat_chatroom_popout"></div> </div> <div class="arrowchat_clearfix"></div> <div class="arrowchat_chatroom_content"> <div id="arrowchat_chatroom_create_flyout" class="arrowchat_create_box"> <div class="arrowchat_create_box_wrapper"> <div style="float: right; position:relative; top:3px"> <div class="arrowchat_ui_button" id="arrowchat_create_button"> <div style="width:42px;height:18px;position:relative;top:2px;left:-1px;">Create</div> </div> </div> <div style="text-align: left; float: left; position: relative; width:170px"> <span>Enter the name of the chat room you'd like to create.</span> </div> <div style="float:left;position:relative;width:125px;"> <input value="Name" class="placeholder" placeholder="Name" id="arrowchat_chatroom_create_input" maxlength="50" type="text"> </div> <div style="float:left;position:relative;width:110px;"> <input value="Password (Optional)" class="placeholder" placeholder="Password (Optional)" id="arrowchat_chatroom_create_password_input" maxlength="50" type="text"> </div> <div style="clear: both;"></div> </div> </div> <div id="arrowchat_chatroom_password_flyout" class="arrowchat_password_box"> <div class="arrowchat_password_box_wrapper"> <div style="float: right;position:relative; top:3px"> <div class="arrowchat_ui_button" id="arrowchat_password_button"> <div style="width:42px;height:18px;position:relative;top:2px;left:-1px;">Join</div> </div> </div> <div style="text-align: left; float: left; position: relative; width:170px"> <span>Enter the password for this chat room.</span> </div> <div style="float:left;position:relative;width:125px;"> <input id="arrowchat_chatroom_password_input" maxlength="50" type="text"> <input id="arrowchat_chatroom_password_id" value="" type="hidden"> </div> <div style="clear: both;"></div> </div> </div> <div id="arrowchat_chatroom_message_flyout" class="arrowchat_message_box"> <div class="arrowchat_message_box_wrapper"> <div> <span class="arrowchat_message_text">The password entered was incorrect. Please try again.</span> </div> </div> </div> <div class="arrowchat_chatroom_full_content"> </div> </div></div><div style="display: none; left: 0px; bottom: 25px;" class="arrowchat_tabpopup" id="arrowchat_userstab_popup"><div class="arrowchat_userstabtitle"> <div class="arrowchat_tab_name">Chat</div> <div class="arrowchat_more_button"> <a href="javascript:void(0);" class="arrowchat_panel_item arrowchat_more_anchor"></a> <div id="arrowchat_options_wrapper" class="arrowchat_more_wrapper"> <div id="arrowchat_options_flyout" class=""> <ul class="arrowchat_inner_menu"> <li class="arrowchat_menu_item"> <a id="arrowchat_setting_sound" class="arrowchat_menu_anchor"> <span>Chat Sounds</span> <input checked="checked" type="checkbox"> </a> </li> <li class="arrowchat_menu_item"> <a id="arrowchat_setting_window_open" class="arrowchat_menu_anchor arrowchat_menu_unchecked"> <span>Keep List Open</span> <input type="checkbox"> </a> </li> <li style="display: none;" class="arrowchat_menu_item"> <a id="arrowchat_setting_names_only" class="arrowchat_menu_anchor arrowchat_menu_unchecked"> <span>Show Names Only</span> <input type="checkbox"> </a> </li> <li class="arrowchat_menu_item"> <a id="arrowchat_setting_block_list" class="arrowchat_menu_anchor" style="background:none"> <span>Manage Block List...</span> <input checked="checked" type="checkbox"> </a> </li> <li class="arrowchat_menu_separator"></li> <li class="arrowchat_menu_item"> <a id="arrowchat_gooffline" class="arrowchat_menu_anchor"> <span>Available to Chat</span> </a> </li> </ul> <div class="arrowchat_block_menu"> <div class="arrowchat_block_menu_text">Select the user you wish to unblock</div> <div style="float:left"> <select></select> </div> <div class="arrowchat_ui_button" id="arrowchat_unblock_button" style="float:right"> <div style="width:45px;height:18px;position:relative;top:2px;left:-1px;">Unblock</div> </div> <div class="arrowchat_clearfix"></div> </div> <i class="arrowchat_more_tip"></i> </div> </div> </div> <div class="arrowchat_theme_button"> <a href="javascript:void(0);" class="arrowchat_theme_link arrowchat_more_anchor"></a> <div id="arrowchat_theme_wrapper" class="arrowchat_more_wrapper"> <div id="arrowchat_theme_flyout" class=""> <div class="arrowchat_theme_menu"> <div class="arrowchat_theme_menu_text">Select the theme you wish to use</div> <div style="float:left"> <select class="arrowchat_themeswitcher"><option value="4" selected="selected">FB No Bar</option></select> </div> <div class="arrowchat_ui_button" id="arrowchat_theme_button" style="float:right"> <div style="width:45px;height:18px;position:relative;top:2px;left:-1px;">Choose</div> </div> <div class="arrowchat_clearfix"></div> </div> <i class="arrowchat_more_tip"></i> </div> </div> </div> </div> <div style="display: none;" class="arrowchat_powered_by">Powered By <a href="http://www.arrowchat.com/" target="_blank">ArrowChat</a></div> <div style="display: block;" class="arrowchat_facebook_connect"><img style="position:relative;left:2px;top:1px" src="MyAttacks_files/img-facebook-icon.png" alt="Connect to Facebook"><span style="position:relative;top:-2px;left:7px;"><a href="javascript:void(0);">Connect to Facebook</a></span></div> <div class="arrowchat_tabcontent arrowchat_tabstyle"> <div id="arrowchat_buddylist_message_flyout" class="arrowchat_message_box"> <div class="arrowchat_message_box_wrapper"> <div> <span class="arrowchat_message_text"></span> </div> </div> </div> <div class="arrowchat_enter_name_wrapper"> <input value="Enter a name to chat with" class="placeholder" placeholder="Enter a name to chat with" id="arrowchat_guest_name_input" maxlength="25" type="text"> </div> <div style="height: auto;" id="arrowchat_userscontent"> <div id="arrowchat_userslist_available"></div> <div id="arrowchat_userslist_busy"></div> <div id="arrowchat_userslist_away"></div> <div id="arrowchat_userslist_invisible"></div> <div id="arrowchat_userslist_offline"></div> </div> <div id="arrowchat_search_friends"> <input value="Search" class="arrowchat_search_friends_text placeholder" placeholder="Search" type="text"> </div> </div></div><div></div><div id="arrowchat_sound_player_holder"></div><div style="display: none;" class="arrowchat_tabpopup"><div class="arrowchat_tabtitle"> <div class="arrowchat_user_status"></div> <div class="arrowchat_tab_name"><a href="http://game.nation-wars.com/users.php?id=121">DBozMen</a></div> <div class="arrowchat_closebox"></div> <div class="arrowchat_more_button"> <a href="javascript:void(0)" class="arrowchat_more_anchor" id="arrowchat_more_121"></a> <div class="arrowchat_more_wrapper"> <div id="arrowchat_more_popout_121" class="arrowchat_more_popout"> <div style="display: none;" id="arrowchat_file_transfer_121" class="arrowchat_video_chat"> Add Files... </div> <div class="arrowchat_video_chat arrowchat_chat_popout"> Pop Out Chat </div> <div id="arrowchat_clear_121" class="arrowchat_video_chat"> Clear Conversation </div> <hr class="arrowchat_options_divider" style="margin-top:5px"> <div id="arrowchat_block_121" class="arrowchat_video_chat"> Block User </div> <div id="arrowchat_report_121" class="arrowchat_video_chat"> Report Spam/Abuse </div> <i class="arrowchat_more_tip"></i> </div> </div> </div> <div style="display: none;" id="arrowchat_video_chat_121" class="arrowchat_video_icon arrowchat_video_unavailable"></div> </div> <div class="arrowchat_tabcontent"> <div id="arrowchat_file_upload_div_121" class="arrowchat_file_upload" style="display: none;"> <div class="arrowchat_file_upload_wrapper"> <div style="float: right;"> <div class="arrowchat_ui_button"> <input id="arrowchat_file_upload_121" name="file_upload" type="file"> <div class="arrowchat_upload_text">Browse</div> </div> </div> <div class="arrowchat_upload_info_text" style="text-align: left; float: left; position: relative; width:150px"> Hit browse to upload a file or <a href="javascript:void(0);" id="arrowchat_file_cancel_121">cancel the upload</a> </div> <div style="clear: both;"></div> </div> </div> <div id="arrowchat_chatbox_message_flyout_121" class="arrowchat_message_box"> <div class="arrowchat_message_box_wrapper"> <div> <span class="arrowchat_message_text">Your file has been uploaded and sent.</span> </div> </div> </div> <div class="arrowchat_tabcontenttext" id="arrowchat_tabcontenttext_121"></div> <div class="arrowchat_tabcontentinput"> <textarea style="width: 99%;" class="arrowchat_textarea"></textarea> <div style="display: none;" class="arrowchat_smiley_button"> <div class="arrowchat_more_wrapper arrowchat_smiley_popout"> <div class="arrowchat_more_popout"> <div class="arrowchat_smiley_box"><div class="arrowchat_smiley_wrapper" data-id="0"><img class="arrowchat_smiley" src="MyAttacks_files/smile.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="1"><img class="arrowchat_smiley" src="MyAttacks_files/big_grin.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="2"><img class="arrowchat_smiley" src="MyAttacks_files/wink.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="3"><img class="arrowchat_smiley" src="MyAttacks_files/agape.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="4"><img class="arrowchat_smiley" src="MyAttacks_files/bored.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="5"><img class="arrowchat_smiley" src="MyAttacks_files/crying.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="6"><img class="arrowchat_smiley" src="MyAttacks_files/tongue.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="7"><img class="arrowchat_smiley" src="MyAttacks_files/confused.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="9"><img class="arrowchat_smiley" src="MyAttacks_files/frown.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="15"><img class="arrowchat_smiley" src="MyAttacks_files/mad.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="16"><img class="arrowchat_smiley" src="MyAttacks_files/dead.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="17"><img class="arrowchat_smiley" src="MyAttacks_files/delicious.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="18"><img class="arrowchat_smiley" src="MyAttacks_files/dont_cry.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="19"><img class="arrowchat_smiley" src="MyAttacks_files/evil.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="20"><img class="arrowchat_smiley" src="MyAttacks_files/evil_grin.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="21"><img class="arrowchat_smiley" src="MyAttacks_files/impatient.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="22"><img class="arrowchat_smiley" src="MyAttacks_files/inlove.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="23"><img class="arrowchat_smiley" src="MyAttacks_files/kiss.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="24"><img class="arrowchat_smiley" src="MyAttacks_files/nerdy.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="25"><img class="arrowchat_smiley" src="MyAttacks_files/not_even.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="26"><img class="arrowchat_smiley" src="MyAttacks_files/oh_rly.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="27"><img class="arrowchat_smiley" src="MyAttacks_files/shocked.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="28"><img class="arrowchat_smiley" src="MyAttacks_files/sick.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="29"><img class="arrowchat_smiley" src="MyAttacks_files/sing.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="30"><img class="arrowchat_smiley" src="MyAttacks_files/stress.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="31"><img class="arrowchat_smiley" src="MyAttacks_files/sunglasses_1.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="32"><img class="arrowchat_smiley" src="MyAttacks_files/whistle.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="33"><img class="arrowchat_smiley" src="MyAttacks_files/yawn.png" alt=""></div><div class="arrowchat_smiley_wrapper" data-id="34"><img class="arrowchat_smiley" src="MyAttacks_files/zipped.png" alt=""></div></div> <i class="arrowchat_more_tip"></i> </div> </div> </div> </div> </div></div></body></html>

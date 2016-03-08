@@ -1,0 +1,81 @@
+.scores_rank,.scores_nwtot,.scores_nwgained,.scores_nwkilled,.scores_land,.scores_members {
+	background-color: #46463e;
+	border : 1px solid #000000;
+}
+.scores_nation,.scores_avgnwtot,.scores_avgnwgained,.scores_avgnwkilled,.scores_avgland {
+	background-color: #333333;
+	border : 1px solid #000000;
+}
+
+.scores_nwkilled_title,.scores_avgnwkilled_title
+{
+	color: #cc0000;
+} 
+
+.scores_th_row {
+	border : 1px solid #ffffff;
+}
+.scores_th_row {
+	border : 1px solid #ffffff;
+}
+.scores_col_1 {
+	background-color: #46463e;
+	border : 1px solid #000000;
+}
+.scores_col_2 {
+	background-color: #333333;
+	border : 1px solid #000000;
+}
+.scores_col_3 {
+	background-color: #46463e;
+	border : 1px solid #000000;
+}
+.scores_col_4 {
+	background-color: #333333;
+	border : 1px solid #000000;
+}
+.scores_col_5 {
+	background-color: #46463e;
+	border : 1px solid #000000;
+}
+.scores_col_6 {
+	background-color: #333333;
+	border : 1px solid #000000;
+}
+.scores_col_7 {
+	background-color: #46463e;
+	border : 1px solid #000000;
+}
+.scores_th_row {
+	border : 1px solid #ffffff;
+}
+#scores_col_1_th {
+	border-left : 1px solid #FFFFFF;
+	border-top : 1px solid #FFFFFF;
+	border-bottom : 1px solid #FFFFFF;
+}
+#scores_col_2_th {
+	border-top : 1px solid #FFFFFF;
+	border-bottom : 1px solid #FFFFFF;
+}
+#scores_col_3_th {
+	border-top : 1px solid #FFFFFF;
+	border-bottom : 1px solid #FFFFFF;
+}
+#scores_col_4_th {
+	border-top : 1px solid #FFFFFF;
+	border-bottom : 1px solid #FFFFFF;
+}
+#scores_col_5_th {
+	border-top : 1px solid #FFFFFF;
+	border-bottom : 1px solid #FFFFFF;
+}
+#scores_col_6_th {
+	border-top : 1px solid #FFFFFF;
+	border-bottom : 1px solid #FFFFFF;
+}
+#scores_col_7_th {
+	border-top : 1px solid #FFFFFF;
+	border-bottom : 1px solid #FFFFFF;
+	border-right : 1px solid #FFFFFF;
+}
